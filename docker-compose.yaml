@@ -16,7 +16,7 @@ services:
   
   backend:
     build: 
-      context: backproyectoinformatica
+      context: ./backproyectoinformatica
       dockerfile: /Dockerfile     
 
 volumes:
