@@ -17,7 +17,9 @@ services:
   backend:
     build: 
       context: ./backproyectoinformatica
-      dockerfile: Dockerfile     
+      dockerfile: Dockerfile    
+    depends_on:
+      - mysql 
 
 volumes:
   db_data:
