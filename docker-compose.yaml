@@ -23,5 +23,14 @@ services:
     ports:
       - "5000:5000"
 
+  front:
+    build:
+      context: ./YouCook/YouCookFront
+      dockerfile: Dockerfile
+    depends_on:
+      - backend
+    ports:
+      - "8000:80"
+
 volumes:
   db_data:
